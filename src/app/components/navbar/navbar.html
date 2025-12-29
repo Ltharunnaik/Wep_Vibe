@@ -1,0 +1,32 @@
+<header class="navbar">
+  <div class="logo">
+    <div class="logo-image"></div>
+  </div>
+
+  <div class="menu-icon" (click)="toggleMenu()">☰</div>
+
+  <nav [class.active]="menuOpen">
+
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+
+    <div class="dropdown">
+      <a class="dropdown-toggle" (click)="toggleServices($event)">Services ▾</a>
+      <div class="dropdown-menu" [class.show]="servicesOpen">
+        <a href="/StaffingSolutions">Staffing Solutions</a>
+        <a href="/Web">Temporary Staffing</a>
+        <a href="/mobile">Permanent Staffing (Non-IT)</a>
+        <a href="/StaffingIT">Permanent Staffing (IT)</a>
+        <a href="/software">Permanent Recruitment</a>
+        <a href="/consulting">RPO</a>
+        <a href="/Contract">Contract to Hire</a>
+        <a href="/Train">Train, Hire & Deploy</a>
+        <a href="/PayRoll">Payroll</a>
+        <a href="/Leadership">Executive Hiring</a>
+      </div>
+    </div>
+
+    <a href="/products">Upload Resume</a>
+    <a href="/contact">Contact</a>
+  </nav>
+</header>

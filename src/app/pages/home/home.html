@@ -1,0 +1,63 @@
+
+
+<div class="slider-container">
+
+  <div
+    class="slide"
+    *ngFor="let slide of slides; let i = index"
+    [class.active]="i === currentIndex"
+    [style.backgroundImage]="'url(' + slide.image + ')'"
+  >
+    <div class="overlay"></div>
+
+    <div class="content">
+      <!-- <h1>{{ slide.title }}</h1>
+      <p>{{ slide.subtitle }}</p> -->
+    </div>
+  </div>
+
+  <!-- Arrows -->
+  <button class="arrow left" (click)="prevSlide()">❮</button>
+  <button class="arrow right" (click)="nextSlide()">❯</button>
+
+</div>
+
+
+<section class="hero">
+  <h1>Welcome to WapVibe Technologies Pvt. Ltd.</h1>
+  <p style="    color: red;    font-size: 22px;">Integrated HR Service Provider</p>
+  <p>WapVibe Technologies Pvt. Ltd. is a trusted Integrated HR Service Provider, delivering end-to-end human resource solutions
+     tailored to meet the evolving needs of modern businesses. We specialize in Payroll Management, Staffing Solutions, and 
+     Recruitment Services, helping organizations focus on growth while we take care of their workforce needs.</p>
+  
+  <a href="/about">Get Started</a>
+</section>
+
+
+
+
+
+
+
+<section class="services-container">
+  <div
+    class="service-card"
+    *ngFor="let service of services"
+    (click)="openPopup(service)"
+  >
+    <img [src]="service.icon" alt="icon">
+    <h3>{{ service.title }}</h3>
+    <p>{{ service.short }}</p>
+  </div>
+</section>
+
+<!-- POPUP MODAL -->
+<div class="popup-overlay" *ngIf="selectedService">
+  <div class="popup">
+    <span class="close" (click)="closePopup()">×</span>
+    <img [src]="selectedService.icon">
+    <h2>{{ selectedService.title }}</h2>
+    <p>{{ selectedService.full }}</p>
+  </div>
+</div>
+

@@ -1,0 +1,34 @@
+import { Routes } from '@angular/router';
+import { Home } from './pages/home/home';
+import { About } from './pages/about/about';
+import { Services } from './pages/services/services';
+import { Products } from './pages/products/products';
+import { Contact } from './pages/contact/contact';
+import { Web } from './Services/web/web';
+import { Mobile } from './Services/mobile/mobile';
+import { Software } from './Services/software/software';
+import { Consulting } from './Services/consulting/consulting';
+import { Contract } from './Services/contract/contract';
+import { Train } from './Services/train/train';
+import { PayRoll } from './Services/pay-roll/pay-roll';
+import { Leadership } from './Services/leadership/leadership';
+import { StaffingSolutions } from './pages/staffing-solutions/staffing-solutions';
+import { StaffingIT } from './Services/staffing-it/staffing-it';
+
+export const routes: Routes = [
+     { path: '', component: Home },
+  { path: 'about', component: About },
+  { path: 'services', component: Services },
+  { path: 'products', component: Products },
+  { path: 'contact', component: Contact },
+  { path: 'Web', component: Web },
+  { path: 'mobile', component: Mobile },
+    { path: 'software', component: Software },
+  { path: 'consulting', component: Consulting },
+  { path: 'Contract', component: Contract },
+  { path: 'Train', component: Train },
+  { path: 'PayRoll', component: PayRoll },
+  { path: 'Leadership', component: Leadership },
+  { path: 'StaffingSolutions', component: StaffingSolutions },
+  { path: 'StaffingIT', component: StaffingIT }
+];

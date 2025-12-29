@@ -1,0 +1,80 @@
+.footer {
+  background: #2b2b2b;
+  color: #ccc;
+  padding-top: 60px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 60px;
+  padding: 0 20px 60px;
+}
+
+.footer-box h3 {
+  color: #fff;
+  font-size: 26px;
+  margin-bottom: 30px;
+  font-family: serif;
+}
+
+.footer-box p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.footer-box strong {
+  color: #fff;
+}
+
+/* LINKS */
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-box ul li:hover {
+  color: #fff;
+  padding-left: 5px;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+  display: flex;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+/* BASE ICON STYLE */
+.social-icons .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+/* INDIVIDUAL ICON IMAGES */
+.icon.fb { background-image: url("https://cdn.pixabay.com/photo/2015/05/12/09/13/social-media-763731_1280.jpg"); }
+.icon.tw { background-image: url("https://cdn.pixabay.com/photo/2017/11/10/05/04/facebook-2935402_1280.png"); }
+.icon.yt { background-image: url("https://cdn.pixabay.com/photo/2022/01/21/00/38/youtube-icon-6953526_1280.jpg"); }
+.icon.ig { background-image: url("https://cdn.pixabay.com/photo/2021/10/24/21/23/instagram-6739334_1280.jpg"); }
+.icon.ln { background-image: url("https://cdn.pixabay.com/photo/2015/08/28/11/30/linkedin-911794_1280.jpg"); }
+.icon.pn { background-image: url("https://cdn.pixabay.com/photo/2016/05/15/01/12/icon-1392959_1280.png"); }
+
+/* HOVER EFFECT */
+.social-icons .icon:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.4);
+}
